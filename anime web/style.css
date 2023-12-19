@@ -1,0 +1,64 @@
+/* Custom CSS Styles */
+
+/* Header Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('image/bg.jpg') center center fixed;
+    background-size: cover;
+
+    /* Add the second background with a gradient overlay */
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  /* Gradient overlay */
+        url('image/bg.jpg') center center fixed;   /* Second background */
+    background-size: cover;
+    font-family: 'Roboto', sans-serif; /* Use the modern font (Roboto) */
+}
+
+h1, h2 {
+    color: white;
+}
+/* Navigation Bar Styles */
+.navbar {
+    margin-bottom: 20px; /* Add some space below the navigation bar */
+}
+
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-dark .navbar-brand {
+    color: #ffd700; /* Golden yellow color for the brand */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffd700; /* Golden yellow color for the nav links */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: white;
+}
+/* Footer Styles (Optional) */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #343a40;
+    color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Additional Styles for H1 */
+h1 {
+    background-color: gray; /* Golden yellow background for h1 */
+    border-style: ridge;
+    padding: 15px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 200px;
+}
+p
+{
+    color: #ffffff;
+    font-style: italic;
+}

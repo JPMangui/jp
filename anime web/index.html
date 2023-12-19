@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime World</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Anime World</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="anime-list.html">Anime List</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Home Page -->
+<div class="container mt-3 text-center">
+    <h1>Welcome to Anime World</h1>
+    <p>Explore the fascinating world of anime with us.</p>
+    <!-- Use Bootstrap grid system to align images in the middle -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-3" id="image1Container">
+                <img src="image/1.jpg" alt="Anime Picture" class="img-fluid custom-border" id="image1">
+            </div>
+            <div class="col-md-3" id="image2Container">
+                <img src="image/2.png" alt="Anime Picture" class="img-fluid custom-border" id="image2">
+            </div>
+            <div class="col-md-3" id="image3Container">
+                <img src="image/3.jpg" alt="Anime Picture" class="img-fluid custom-border" id="image3">
+            </div>
+            <div class="col-md-3" id="image4Container">
+                <img src="image/4.jpg" alt="Anime Picture" class="img-fluid custom-border" id="image4">
+            </div>
+        </div>
+    </div>
+
+<!-- Bootstrap JS and Popper.js CDN -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Custom JavaScript -->
+<script>
+    // Function to set border size based on image size
+    function setBorderSize(imageId, containerId) {
+        var image = document.getElementById(imageId);
+        var container = document.getElementById(containerId);
+
+        // Get image dimensions
+        var imageWidth = image.width;
+        var imageHeight = image.height;
+
+        // Set border size based on image dimensions
+        var borderSize = Math.min(imageWidth, imageHeight) * 0.05; // Adjust the factor as needed
+
+        // Apply the border size to the container
+        container.style.borderWidth = borderSize + "px";
+    }
+
+    // Call the function for each image
+    setBorderSize("image1", "image1Container");
+    setBorderSize("image2", "image2Container");
+    setBorderSize("image3", "image3Container");
+    setBorderSize("image4", "image4Container");
+</script>
+
+</body>
+</html>
